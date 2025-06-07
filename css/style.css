@@ -32,14 +32,14 @@ header{
     padding-left: 5%;
     padding-right: 5%;
 }
-.container,.about-us h2{
+.container h2,.about-us h2{
     color: #779611;
     font-weight: 600;
     font-size: 48px;
     font-family: 'Exo 2', sans-serif;
     padding-right: 20%;
 }
-.container,.about-us p{
+.container p,.about-us p{
     font-size: 24px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
@@ -61,7 +61,7 @@ header{
 }
 .right-block{
     flex: 1;
-    
+    align-items: flex-end;
 }
 .shop{
     display: flex;
