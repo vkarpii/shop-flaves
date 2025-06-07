@@ -1,0 +1,40 @@
+body{
+    background-color: #F9F9F9;
+    margin: 0;
+}
+
+header{
+   border-bottom: 2px solid #779611;
+   padding: 2% 5% 2% 5%;
+}
+.menu{
+    margin: 2%;
+}
+.menu a{
+    padding: 2%;
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
+    color: #707070;
+}
+.logo-text{
+    color: #779611;
+    text-transform: lowercase;
+    font-weight: 600;
+    font-size: 32px;
+    font-family: 'Exo 2', sans-serif;
+}
+.container{
+    display: flex;
+     border-bottom: 2px solid #779611;
+}
+.container h2{
+    color: #779611;
+    font-weight: 600;
+    font-size: 48px;
+    font-family: 'Exo 2', sans-serif;
+}
+
+.left-block, .right-block{
+    flex: 1;
+    padding: 5%;
+}
