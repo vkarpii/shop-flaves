@@ -2,6 +2,9 @@ body{
     background-color: #F9F9F9;
     margin: 0;
 }
+img{
+    border-radius: 15px;
+}
 
 header{
    border-bottom: 2px solid #779611;
@@ -11,16 +14,22 @@ header{
     margin: 2%;
 }
 .menu a{
-    padding: 2%;
-    font-size: 24px;
+    padding: 0.75vw;
+    margin: 0.75vw;
     font-family: 'Montserrat', sans-serif;
     color: #707070;
+}
+.menu a:hover{
+    background-color: #779611;
+    color: #F9F9F9;
+    border-radius: 20px;
+    cursor:pointer;
+    box-shadow: 0px 0px 5px #707070;
 }
 .logo-text{
     color: #779611;
     text-transform: lowercase;
     font-weight: 600;
-    font-size: 32px;
     font-family: 'Exo 2', sans-serif;
 }
 .container{
@@ -31,33 +40,39 @@ header{
     align-items: center;
     padding-left: 5%;
     padding-right: 5%;
+    padding-bottom: 1%;
+}
+img{
+    width: 100%;
+    height: auto;
 }
 .container h2,.about-us h2{
     color: #779611;
     font-weight: 600;
-    font-size: 48px;
     font-family: 'Exo 2', sans-serif;
-    padding-right: 20%;
 }
 .container p,.about-us p{
-    font-size: 24px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
 }
 .container button{
     background-color: #779611;
     font-family: 'Montserrat', sans-serif;
-    font-size: 32px;
     font-weight: 400;
     color: #F9F9F9;
     padding: 3% 15% 3% 15%;
     border-radius: 40px;
     border: 0px;
-    
+}
+.container button:hover{
+    background-color: #97be15;
+    cursor: pointer;
+    box-shadow: 0px 0px 3px #97be15;
+    color: white;
 }
 .left-block{
     flex: 1;
-    padding-right: 30%;
+    padding-right: 1%;
 }
 .right-block{
     flex: 1;
@@ -68,6 +83,17 @@ header{
 }
 .element{
     flex: 1;
+    margin: 1%;
+}
+.element:hover{
+   background-color: #ececec;
+   border-radius: 20px;
+   box-shadow: 0px 0px 5px #ececec;
+    cursor: pointer;
+}
+.element:hover img{
+    filter: brightness(80%);
+    border-radius: 15px 15px 0px 0px;
 }
 .container-2{
   padding: 5% 5% 0% 5%;
@@ -75,25 +101,25 @@ header{
 .container-2 h2{
 color: #779611;
     font-weight: 600;
-    font-size: 32px;
     font-family: 'Exo 2', sans-serif;
 }
 .container-2 p{
-font-size: 20px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
 }
 .shop-title{
  font-family: 'Montserrat', sans-serif;
- font-size: 24px;
  font-weight: 400;
  color: #779611;
+ margin-left: 5%;
+ margin-right: 5%;
 }
 .shop-text{
  font-family: 'Montserrat', sans-serif;
- font-size: 20px;
  font-weight: 400;
  color:#707070;
+ margin-left: 5%;
+ margin-right: 5%;
 }
 .footer{
     padding: 2% 5% 2% 5%;
@@ -105,4 +131,39 @@ font-size: 20px;
     align-items: center;
     padding: 5%;
     margin-top: 5%;
+}
+
+.big-text{
+    font-size: 48px;
+}
+.medium-text{
+    font-size: 26px;
+}
+
+.small-text{
+    font-size: 24px;
+}
+
+@media(max-width: 900px){
+    .big-text{
+        font-size: 32px;
+    }
+    .medium-text{
+    font-size: 22px;
+    }
+    .small-text{
+    font-size: 20px;
+    }
+}
+
+@media(max-width: 510px){
+    .big-text{
+        font-size: 24px;
+    }
+    .medium-text{
+    font-size: 14px;
+    }
+    .small-text{
+    font-size: 14px;
+    }
 }
