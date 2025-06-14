@@ -1,174 +1,213 @@
-body{
+/* --- Основні налаштування --- */
+body {
     background-color: #F9F9F9;
     margin: 0;
 }
-img{
+
+img {
     border-radius: 15px;
+    width: 100%;
+    height: auto;
 }
 
-header{
-   border-bottom: 2px solid #779611;
-   padding: 2% 5% 2% 5%;
+/* --- Хедер --- */
+header {
+    border-bottom: 2px solid #779611;
+    padding: 2% 5%;
 }
-.menu{
+
+/* --- Меню --- */
+.menu {
     margin: 2%;
 }
-.menu a{
+
+.menu a {
     padding: 0.75vw;
     margin: 0.75vw;
     font-family: 'Montserrat', sans-serif;
     color: #707070;
+    text-decoration: none;
 }
-.menu a:hover{
+
+.menu a:hover {
     background-color: #779611;
     color: #F9F9F9;
     border-radius: 20px;
-    cursor:pointer;
-    box-shadow: 0px 0px 5px #707070;
+    cursor: pointer;
+    box-shadow: 0 0 5px #707070;
 }
-.logo-text{
+
+/* --- Логотип --- */
+.logo-text {
     color: #779611;
     text-transform: lowercase;
     font-weight: 600;
     font-family: 'Exo 2', sans-serif;
 }
-.container{
+
+/* --- Контейнери --- */
+.container {
     display: flex;
     margin: 0;
-    padding: 0;
+    padding: 0 5% 1% 5%;
     border-bottom: 2px solid #779611;
     align-items: center;
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-bottom: 1%;
 }
-img{
-    width: 100%;
-    height: auto;
-}
-.container h2,.about-us h2{
+
+.container h2,
+.about-us h2 {
     color: #779611;
     font-weight: 600;
     font-family: 'Exo 2', sans-serif;
 }
-.container p,.about-us p{
+
+.container p,
+.about-us p {
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
 }
-.container button{
+
+/* --- Кнопки --- */
+.container button {
     background-color: #779611;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     color: #F9F9F9;
-    padding: 3% 15% 3% 15%;
+    padding: 3% 15%;
     border-radius: 40px;
-    border: 0px;
-}
-.container button:hover{
-    background-color: #97be15;
+    border: none;
     cursor: pointer;
-    box-shadow: 0px 0px 3px #97be15;
-    color: white;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
-.left-block{
+
+.container button:hover {
+    background-color: #97be15;
+    box-shadow: 0 0 3px #97be15;
+}
+
+/* --- Блоки в контейнері --- */
+.left-block {
     flex: 1;
     padding-right: 1%;
 }
-.right-block{
+
+.right-block {
     flex: 1;
-    align-items: flex-end;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
-.shop{
+
+/* --- Магазин --- */
+.shop {
     display: flex;
 }
-.element{
+
+.element {
     flex: 1;
     margin: 1%;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
-.element:hover{
-   background-color: #ececec;
-   border-radius: 20px;
-   box-shadow: 0px 0px 5px #ececec;
+
+.element:hover {
+    background-color: #ececec;
+    border-radius: 20px;
+    box-shadow: 0 0 5px #ececec;
     cursor: pointer;
 }
-.element:hover img{
+
+.element:hover img {
     filter: brightness(80%);
-    border-radius: 15px 15px 0px 0px;
+    border-radius: 15px 15px 0 0;
 }
-.container-2{
-  padding: 5% 5% 0% 5%;
+
+/* --- Другий контейнер --- */
+.container-2 {
+    padding: 5% 5% 0 5%;
 }
-.container-2 h2{
-color: #779611;
+
+.container-2 h2 {
+    color: #779611;
     font-weight: 600;
     font-family: 'Exo 2', sans-serif;
 }
-.container-2 p{
+
+.container-2 p {
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
 }
-.shop-title{
- font-family: 'Montserrat', sans-serif;
- font-weight: 400;
- color: #779611;
- margin-left: 5%;
- margin-right: 5%;
+
+/* --- Тексти магазину --- */
+.shop-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: #779611;
+    margin: 0 5%;
 }
-.shop-text{
- font-family: 'Montserrat', sans-serif;
- font-weight: 400;
- color:#707070;
- margin-left: 5%;
- margin-right: 5%;
+
+.shop-text {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: #707070;
+    margin: 0 5%;
 }
-.footer{
-    padding: 2% 5% 2% 5%;
-    font-family: 'Arial', sans-serif;
+
+/* --- Футер --- */
+.footer {
+    padding: 2% 5%;
+    font-family: Arial, sans-serif;
     display: flex;
 }
-.column{
+
+.column {
     flex: 1;
 }
-.about-us{
+
+/* --- Про нас --- */
+.about-us {
     display: flex;
-    border-bottom: 2px solid #779611;
     border-top: 2px solid #779611;
+    border-bottom: 2px solid #779611;
     align-items: center;
     padding: 5%;
     margin-top: 5%;
 }
 
-.big-text{
+/* --- Тексти різних розмірів --- */
+.big-text {
     font-size: 48px;
 }
-.medium-text{
+
+.medium-text {
     font-size: 26px;
 }
 
-.small-text{
+.small-text {
     font-size: 24px;
 }
 
-@media(max-width: 900px){
-    .big-text{
+/* --- Адаптивність --- */
+@media (max-width: 900px) {
+    .big-text {
         font-size: 32px;
     }
-    .medium-text{
-    font-size: 22px;
+
+    .medium-text {
+        font-size: 22px;
     }
-    .small-text{
-    font-size: 20px;
+
+    .small-text {
+        font-size: 20px;
     }
 }
 
-@media(max-width: 510px){
-    .big-text{
+@media (max-width: 510px) {
+    .big-text {
         font-size: 24px;
     }
-    .medium-text{
-    font-size: 14px;
-    }
-    .small-text{
-    font-size: 14px;
+
+    .medium-text,
+    .small-text {
+        font-size: 14px;
     }
 }
