@@ -123,6 +123,11 @@ color: #779611;
 }
 .footer{
     padding: 2% 5% 2% 5%;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+}
+.column{
+    flex: 1;
 }
 .about-us{
     display: flex;
